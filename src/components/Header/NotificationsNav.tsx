@@ -4,16 +4,16 @@ import { RiNotificationLine, RiUserAddLine } from "react-icons/ri";
 export function NotificationsNav() {
   return (
     <HStack
-    spacing="8"
-    marginX="8"
-    paddingRight="8"
-    paddingY="1"
-    color="gray.300"
-    borderRadius={1}
-    borderColor="gray.700"
-  >
-    <Icon as={RiNotificationLine} />
-    <Icon as={RiUserAddLine} />
-  </HStack>
+      spacing={["6","8"]}
+      marginX={["6","8"]}
+      paddingRight={["6","8"]}
+      paddingY="1"
+      color="gray.300"
+      borderRadius={1}
+      borderColor="gray.700"
+    >
+      <Icon as={RiNotificationLine} />
+      <Icon as={RiUserAddLine} />
+    </HStack>
   )
 }

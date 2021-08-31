@@ -83,7 +83,7 @@ export default function Dashboard() {
           align="flex-start"
         >
           <Box
-            padding="8"
+            padding={["6", "8"]}
             bg="gray.800"
             borderRadius={8}
             paddingBottom="4"
@@ -100,7 +100,7 @@ export default function Dashboard() {
           </Box>
 
           <Box
-            padding="8"
+            padding={["6", "8"]}
             bg="gray.800"
             borderRadius={8}
             paddingBottom="4"
@@ -108,6 +108,12 @@ export default function Dashboard() {
             <Text fontSize="lg" marginBottom="4">
               Taxa de Abertura
             </Text>
+            <Chart
+              type="area"
+              height={160}
+              options={options}
+              series={series}
+            />
           </Box>
 
         </SimpleGrid>
